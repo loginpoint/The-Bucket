@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bucket</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;900&display=swap" rel="stylesheet">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Styles  -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar-nav w-100 border-bottom position-fixed">
+        <div class="container-fluid d-grid grid-custom h-100">
+            <div class="d-flex">
+               <div class="menu-key d-flex justify-content-center align-items-center h-100 color-gr pr-3">
+                   <ion-icon name="menu-outline" class="fs-22 "></ion-icon>
+               </div>
+               <div class="logo d-flex justify-content-center align-items-center h-100">
+                   <img src="assets/images/logo.white.png"/>
+               </div>
+            </div>
+            <form class=" d-flex justify-content-center align-items-center h-100 position-relative">
+                <input class="form-control fs-12 fw-500" type="search" placeholder="Search...">
+                <label class="position-absolute color-wh ">
+                   <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </form>
+            <div class="sign d-flex justify-content-end align-items-center pr-3">
+                <p class="fs-12 fw-500  mb-0 d-flex justify-content-end align-items-center color-gr"><ion-icon name="person-circle-outline" class="fs-20 pr-2"></ion-icon>Sign in / Register</p>
+            </div>
+        </div>
+    </nav> 
+    <nav></nav>
+    <!--Container-->
+    <div class="tb-container d-flex">
+        <!-- sidebar -->
+        <aside class="">
+            <div class="position-fixed border-right pl-4 pt-4 content">
+                 <p class="color-gr fs-12 fw-600"><span>Browse</span></p>
+                 <ul class="navbar-nav">
+                     <li class="nav-item color-sv"><ion-icon name="logo-firefox"></ion-icon><span>Discover</span></li>
+                     <li class="nav-item color-sv"><ion-icon name="radio-outline"></ion-icon><span>Browse</span></li>
+                     <li class="nav-item color-sv"><ion-icon name="apps-outline"></ion-icon><span>New Release</span></li>
+                     <li class="nav-item color-sv"><ion-icon name="bonfire-outline"></ion-icon><span>Popular</span></li>
+                     <li class="nav-item color-sv"><ion-icon name="analytics-outline"></ion-icon><span>Charts</span></li>
+                 </ul>
+                 <p class="color-gr fs-12 fw-600 mt-4 splitter"><span>Users</span></p>
+                 <ul class="navbar-nav">
+                     <li class="nav-item color-sv"><ion-icon name="grid-outline"></ion-icon><span>Playlists</span></li>
+                     <li class="nav-item color-sv"><ion-icon name="people-outline"></ion-icon><span>Profile</span></li>
+                     <li class="nav-item color-sv"><ion-icon name="log-in-outline"></ion-icon><span>Login</span></li>
+                     <li class="nav-item d-flex justify-content-start align-item-center">
+                         <label class="switch">
+                             <input type="checkbox" class="d-none" checked>
+                             <span class="slider round d-flex justify-content-center align-items-center"></span>
+                         </label>
+                         <p><span>Dark Mode</span></p>
+                     </li>
+                 </ul>
+            </div>
+        </aside>
+        <Div class="tb-page d-flex flex-column contaier">
+           <div class="tb-sec mt-5">
+                <h3 class="fs-15 fw-500 color-wh pl-2 pb-2">Featured</h3>
+                <div class="musicBoxes d-flex">
+                    <!--tb the box-->
+                    <div class="tb-music-box-md music">
+                        <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-28.png">
+                        <div class="overlayer">
+                            
+                        </div>
+                    </div>
+                    <div class="tb-music-box-md music">
+                        <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-49.png">
+                        <div class="overlayer">
+                            
+                        </div>
+                    </div>
+                    <div class="tb-music-box-md music">
+                        <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-27.png">
+                        <div class="overlayer">
+                            
+                        </div>
+                    </div>
+                    <div class="tb-music-box-md music">
+                        <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-23.png">
+                        <div class="overlayer">
+                            
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="tb-sec mt-5">
+                <h3 class="fs-15 fw-500 color-wh  pb-2">Recommended by editors</h3>
+                <div class="musicBoxes d-flex">
+                   <div class="owl-carousel autoplay">
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-12.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-13.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2  color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-14.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-15.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="tb-sec mt-5">
+                <h3 class="fs-15 fw-500 color-wh  pb-2">Top Artists</h3>
+                <div class="musicBoxes">
+                    <div class="owl-carousel noauto5">
+                        <div class="tb-music-box-sm-round music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-12.png">
+                            <div class="musicInfo text-center">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm-round music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-13.png">
+                            <div class="musicInfo text-center">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2  color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm-round music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-14.png">
+                            <div class="musicInfo text-center">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm-round music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-15.png">
+                            <div class="musicInfo text-center">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm-round music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-15.png">
+                            <div class="musicInfo text-center">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="tb-sec mt-5">
+                <h3 class="fs-15 fw-500 color-wh  pb-2">Playlists</h3>
+                <div class="musicBoxes d-flex">
+                   <div class="owl-carousel autoplay musicCarousel">
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-12.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-13.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2  color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-14.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-15.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-24.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-25.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                        <div class="tb-music-box-sm music d-grid rgrid-2-1 music">
+                            <img src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-26.png">
+                            <div class="musicInfo">
+                                <h3 class="fs-12 fw-400 pl-2 pt-2 color-wh">Sound Waveform</h3>
+                                <h4 class="fs-12 fw-400 pl-2 pb-2 color-wh color-sv">Heysound</h4>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="musicPlayer w-100 position-fixed d-grid grid-custom container-fluid ">
+                <div class="controllers d-flex align-items-center justify-content-around">
+                <ion-icon name="arrow-back" class="color-wh fs-12 fs-18" id="prev"></ion-icon>
+                <ion-icon name="play" class="color-wh fs-23" id="play"></ion-icon>
+                <ion-icon name="arrow-forward" class="color-wh fs-18" id="nxt"></ion-icon>
+                <ion-icon name="repeat" class="color-wh fs-18" id="playl"></ion-icon>
+                <ion-icon name="shuffle" class="color-wh fs-18" id="shuf"></ion-icon>
+               </div> 
+               <div class="tfn d-flex ">
+                   <img class="musicPlayerImg" src="http://music.flatfull.com/waveme/wp-content/uploads/sites/2/2020/09/Artboard-6.png" id="musicImg">
+                   <div class="d-grid timeSettings w-100">
+                       <div class="nameTime d-flex justify-content-between">
+                           <h4 class="mb-0"><span class="songName text-white fs-11" id="sn">Promises</span><span class="singerName pl-2 color-sv fs-11" id="an">Calvin Harris Sam Smith</span></h4>
+                           <div class="time d-flex align-items-end pb-1">
+                                <span class="current color-wh fs-11" id="curr">00:00</span>
+                                <span class="color-gr fs-11">/</span>
+                                <span class="duration color-sv fs-11" id="dur">00:00</span>
+                           </div>
+                       </div>
+                       <div class="progressBar w-100 d-flex  align-items-center position-relative mb-4" id="pr">
+                           <div class="bar" id=br></div>
+                           <div class="ball  position-absolute" id="ball"></div>
+                       </div>
+                   </div>
+               </div>
+               <div class="vpl d-flex pl-2">
+                  <div class="d-flex  w-100 align-items-center justify-content-start pl-4">
+                        <ion-icon name="volume-high" class="color-wh"></ion-icon>
+                        <div class="volBar w-25 d-flex  align-items-center position-relative d-flex m-2" id="volpr">
+                            <div class="bar" id=brVl></div>
+                            <div class="ball  position-absolute" id="ballVl"></div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+            <footer class="pt-5 mt-4 pb-5 border-top">
+                <p class="fs-12 color-sv">@ Copyright 2021 Waveme Theme. All Rights Reserved</p>
+                <ul class="navbar-nav fs-12 color-wh flex-row">
+                    <li class="nav-item pr-2">Service Terms</li>
+                    <li class="nav-item pr-2">Music Policy</li>
+                    <li class="nav-item pr-2">Cookie Warnings</li>
+                    <li class="nav-item pr-2">Support</li>
+                    <li class="nav-item pr-2">Feedback</li>
+                </ul>
+            </footer>
+        </Div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="assets/javascripts/owl.slider.js"></script>
+    <script src="assets/javascripts/menusControll.js"></script>
+    <script src="assets/javascripts/MusicPlayer.js"></script>
+</body>
+</html>

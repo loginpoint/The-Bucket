@@ -1,0 +1,456 @@
+/* style v1-0-1 */
+/* By eng / Abdalrhman */
+/*
+  dis-grid
+  f
+  fw
+
+*/
+:root {
+    --black: #010305;
+    --sliver: #ccc;
+    --dark-sliver: #101316;
+    --white: #ffff ;
+    --grey: #818383;
+    --borderColor: #dee2e617;
+    --dark-gray: #202326;
+    --transition: .3s linear;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Poppins', sans-serif;
+    height: 1000;
+}
+.color-wh{
+    color: white !important;
+}
+.color-gr {
+    color: var(--grey);
+}
+.color-sv {
+    color: var(--sliver);
+}
+/* Border */
+.border-left {
+    border-left: 1px solid var(--borderColor) !important
+ }
+ .border-right {
+   border-right: 1px solid var(--borderColor) !important
+ }
+ .border-top {
+   border-top: 1px solid var(--borderColor) !important
+ }
+ .border-bottom {
+   border-bottom: 1px solid var(--borderColor) !important
+ }
+/* fonts */
+.title {
+    color: var(--white);
+}
+.fs-11 {
+    font-size: 11px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-17 {
+    font-size: 17px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-19 {
+    font-size: 19px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-21 {
+    font-size: 21px;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-23 {
+    font-size: 23px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-26 {
+    font-size: 26px;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-900 {
+    font-weight: 900;
+}
+/* TheBucket globals */
+.d-grid {
+    display: grid;
+}
+.grid-1-1 {
+    grid-template-columns: 50% 50%;
+}
+.grid-1-2 {
+    grid-template-columns: 25% 75%;
+}
+.grid-1-3 {
+    grid-template-columns: 33.3333% 66.6666%;
+}
+.grid-1-1-1 {
+    grid-template-columns: 33.3333% 33.3333% 33.3333%; 
+}
+.grid-1-1-2 {
+    grid-template-columns: 25% 25% 50%;
+}
+.grid-1-1-1-1 {
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.grid-1-1-1-1-1 {
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.rgrid-1-2 {
+    grid-template-rows: 25% 75%;
+}
+.rgrid-2-1 {
+    grid-template-rows: 75% 25%;
+}
+/* Navbar */
+nav {
+    height: 61px;
+    z-index: 2;
+    background-color: var(--black);
+}
+
+nav .logo {
+    width: 91px;
+    height: 100%;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 28px;
+}
+
+nav .container-fluid.grid-custom {
+    grid-template-columns: 22% 53% 25%;
+}
+
+nav form input {
+    border-radius: 20px !important;
+    border: none !important;
+    outline-offset: 0;
+    outline: none;
+    background: #202326 !important;
+    height: 37px !important;
+}
+nav form label {
+    right: 20px;
+    top: 21px;
+}
+/* main container */
+.tb-container.custom-grid {
+    grid-template-columns: 13% 87%;
+    width: 100%;
+    min-height: 90.5vh;
+}
+/* Side Navbar */
+aside {
+    width: 200px;
+    min-height: 100vh;
+    height: 100%;
+    transition: var(--transition);
+
+}
+aside.close {
+    transform: translateX(-1000px);
+    width: 0;
+}
+aside .content {
+    width: 200px;
+    height: 100vh;
+}
+aside li {
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
+}
+
+aside ion-icon {
+    padding-right: 10px;
+    font-size: 14px;
+    position: relative;
+    top: 3px;
+}
+@media only screen and (max-width:992px) {
+    aside  span {
+        display: none;
+    }
+    aside .content {
+        width: 66px;
+    }
+    aside .mt-4.splitter {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .musicBoxes {
+        width: 77vw;
+    }
+}
+/* -- Switch --*/
+.switch {
+    width: 23px;
+    height: 12px;
+    background: #ccc;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+}
+.switch .slider {
+    position: relative;
+}
+.switch .slider.round:before {
+    content: '';
+    display: block;
+    height: 15px;
+    width: 14px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    transition: var(--transition);
+}
+
+.switch input:checked + .slider {
+    background-color: var(--grey);
+    width: 100%;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+.switch input:checked + .slider.round:before {
+    left: 55%;
+    transition: var(--transition);
+}
+.switch + p {
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+/* tb pages */
+.tb-page{
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 992px;
+    margin: 0 auto;
+}
+/*tb-music-box-asdad*/
+.music img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.tb-music-box-sm,
+.tb-music-box-sm-round {
+    width: 100%;
+    min-height: 18.2vw;
+    background-color: var(--dark-sliver);
+    border-radius: 4px;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.tb-music-box-sm img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tb-music-box-sm-round img{
+    width: 191px;
+    height: 12vw;
+    border-radius: 50%;
+    padding: 29px;
+
+}
+.tb-music-box-extended {
+    
+}
+.tb-music-box-md {
+    width: 16.5vw;
+    height: 16.5vw;
+    max-width: 238px;
+    max-height: 238px;
+    margin: 6.5px;
+    border-radius: 4px;
+}
+.musicBoxes {
+    width: 65vw;
+}
+/* owl controls */
+.musicCarousel .owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    transition: var(--transition);
+}
+.musicCarousel:hover .owl-nav {
+    opacity: 1;
+}
+.musicCarousel .owl-prev,
+.musicCarousel .owl-next {
+    width: 40px;
+    height: 40px;
+    background: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #000;
+}
+.musicCarousel .owl-prev {
+    position: absolute !important;
+    left: -21px;
+}
+.musicCarousel .owl-next {
+    position: absolute !important;
+    right: -21px;
+}
+
+/* browse */
+
+.tb-browse-box-sm {
+    height: 12vw;
+    width: 100%;
+    min-height: 246px;
+}
+
+.tb-browse-box-sm img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.tb-browse-box-sm .musicInfo{
+    bottom: -1px;
+    width: 100%;
+    background: #101316;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    min-height: 74px;
+}
+
+.browse {
+    width: 65vw;
+}
+.music-box {
+    background-color: var(--dark-sliver);
+    width: 13vw;
+    min-height: 13vw;
+    max-width: 172px;
+    max-height: 172px;
+    border-radius: 4px;
+    margin-right: 25px;
+}
+.music-box img {
+    width: 100%;
+    height: 70%;
+    border-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/* Music PLayer */
+.musicPlayer {
+   height: 60px;
+   background: var(--dark-gray);
+   left: 0;
+   bottom: 0;
+   z-index: 1000;
+   user-select: none;
+}
+.musicPlayer ion-icon {
+    cursor: pointer;
+}
+.musicPlayer #shuf.active{
+    color: orangered !important;
+}
+.musicPlayer #playl.rs {
+    color: var(--grey) !important;
+}
+.musicPlayer #playl.rp {
+    color: orangered !important;
+}
+.musicPlayer.grid-custom {
+    grid-template-columns: 14% 66% 20%;
+}
+.musicPlayer img {
+    width: 59px;
+    padding: 10px;
+    border-radius: 14px;
+}
+.musicPlayer .timeSettings {
+    grid-template-rows: 55% 45%;
+    /* align-items: flex-end;  */
+}
+.musicPlayer .timeSettings  {
+    user-select: none !important;
+}
+.musicPlayer .timeSettings .progressBar,
+.musicPlayer .vpl .volBar {
+    background-color: var(--grey);
+    height: 2px;
+    cursor: pointer;
+}
+.musicPlayer .timeSettings .progressBar .bar,
+.musicPlayer .vpl .volBar .bar{
+    background-color: orangered;
+    height: 100%;
+    width: 0%;
+}
+.musicPlayer .vpl .volBar .bar {
+    width: 50%;
+}
+.musicPlayer .timeSettings .progressBar .bar.notrans {
+    transition: none !important;
+}
+.musicPlayer .timeSettings .progressBar .ball,
+.musicPlayer  .volBar .ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--sliver);
+}
+.musicPlayer  .volBar .ball{
+    left: 50%;
+}
+.musicPlayer .timeSettings .progressBar:hover .ball,
+.musicPlayer .timeSettings .progressBar .bar:hover + .ball {
+    visibility: visible !important;
+}
